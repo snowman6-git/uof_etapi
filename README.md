@@ -1,14 +1,28 @@
-# git-command
-# git-command
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
-# uof_etapi
+## 비공식 에타 api
+
+현재 테스트중이며, 사용은 가능하나 로그인 방식이 아닌 로그인 한 사용자의 쿠키를 추출하여 넣어줘야 동작합니다.
+
+캡챠때문에 아마 리퀘스트 만으론 로그인 방식으로 구현하기는 어려워보입니다.
+
+|키|값(예시)|
+|:--:|:--:|
+|x-et-device|숫자형|
+|etsid|문자열|
+
+형식
+```
+upload = {
+    "id": "",  # 게시판 id
+    "text": """
+        해당 게시글은 etapi_v1으로 제작되었습니다.
+
+        #도배하면_리밋 #왜_항상_새벽에만_아이디어
+    """,  # 내용
+    "is_anonym": "1",  # 익명 여부
+    "Is_question": "U",  # 질문글 여부
+    "title": "에타 api 테스트",  # 제목
+}
+```
+
+실행결과
+![image](https://github.com/user-attachments/assets/79b552dd-a022-4a06-81e8-46ecbaeb89c1)
