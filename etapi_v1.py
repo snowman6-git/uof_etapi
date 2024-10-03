@@ -8,6 +8,7 @@ headers = {
 
 upload = {
     "id": "",  # 게시판 id
+    "title": "에타 api 테스트",  # 제목
     "text": """
         해당 게시글은 etapi_v1으로 제작되었습니다.
 
@@ -15,7 +16,6 @@ upload = {
     """,  # 내용
     "is_anonym": "1",  # 익명 여부
     "Is_question": "U",  # 질문글 여부
-    "title": "에타 api 테스트",  # 제목
     # attaches: [ id"70242071"caption :"이미지에+대한+설명}] #이미지 설명 (테스트중)
 }
 
